@@ -22,6 +22,11 @@ div#hora{
     padding: 20px;
     font-weight: bold;
 }
+div#msg{
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
 section img{
     display: block;
     border-radius: 100%;
