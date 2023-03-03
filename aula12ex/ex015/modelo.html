@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
-    <section>
-        <div>
+    <section id="container">
+        <div id="dados">
+            <form method="get">
+                <fieldset>
+                    <label for="ano"><strong>Ano de nascimento:</strong></label><input type="number" name="ano" id="ano" min="1900" max="2023" required placeholder="Ex.1998"><br>
+                </fieldset>
 
+                <fieldset>
+                    <legend><strong>Sexo:</strong></legend>
+                    <label for="sexom">Masculino</label><input type="radio" name="sexo" id="sexom" checked>
+                    <label for="sexof">Feminino</label> <input type="radio" name="sexo" id="sexof"><br>
+                </fieldset>
+
+                <input type="button" value="Verificar" onclick="verificar()" id="botao">
+            </form>
         </div>
-        <div>
-
+        <div id="foto">
+            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
     </section>
 
