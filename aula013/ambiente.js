@@ -5,7 +5,11 @@ var c =1
     c = c + 1 //Soma 1 a cada vez que o bloco repete (poderia ser escrito c++)
 } */
 
-do{
+/* do{
     console.log(`Passo ${c}`)
     c = c + 1 //Soma 1 a cada vez que o bloco repete (poderia ser escrito c++)
-}while(c <= 6)
+}while(c <= 6) */
+
+for(var c = 1; c <= 6; c++){ //Mesmo exemplo dos acima mas com o FOR
+    console.log(`Passo ${c}`)
+}
