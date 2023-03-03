@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Vamos Contar</h1>
     </header>
 
     <section>
-        <div>
-
+        <div id="dados">
+            <form>
+                <label for="inicio"><strong>Início:</strong></label><input type="number" name="inicio" id="inicio" placeholder="Ex. 1"><br>
+                <label for="final"><strong>Final:</strong></label><input type="number" name="final" id="final" required placeholder="Ex. 10"><br>
+                <label for="passo"><strong>Passo:</strong></label><input type="number" name="passo" id="passo" required placeholder="Ex. 2">
+                <input id="botao" type="button" value="Contar" onclick="contar()">
+            </form>
         </div>
-        <div>
-
+        <div id="resultado">
+            <p>Preparando a contagem...</p>
         </div>
     </section>
 
