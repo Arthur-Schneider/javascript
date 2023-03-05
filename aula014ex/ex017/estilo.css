@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(70, 142, 236);
+    background-image: linear-gradient(to bottom, rgb(133, 8, 133), rgba(67, 138, 230, 0.712));
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
 }
 header{
     color: white;
     text-align: center;
+    padding-top: 30px;
 }
 section{
     display: block;
